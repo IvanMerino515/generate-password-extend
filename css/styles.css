@@ -24,3 +24,173 @@ margin-top: 0;
 margin-bottom: 0;
 
 }
+
+body{
+background-color: #FF6629;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+gap:50px
+}
+
+.password-box{
+width: 100%;
+height: 100px;
+background-color: #c6c4c3;
+border: 1px solid black;
+border-radius: 4px;
+}
+
+#passwordContent{
+font-size: 50px;
+text-align: center;
+font-weight: 900;
+
+}
+
+.lengthpass{
+display: flex;
+flex-direction: row;
+justify-content: center;
+
+
+}
+
+.passwordlenght{
+font-family: "Roboto", serif;
+color: rgb(21, 21, 21);
+font-weight: 900;
+font-size: 26px;
+}
+
+.lengthNumber{
+font-family: "Roboto", serif;
+color: rgb(21, 21, 21);
+font-weight: 900;
+font-size: 26px;
+}
+
+.input{
+width: 80%;
+height: 20px;
+accent-color: black;
+border: none;
+background-color: #c6c4c3;
+}
+
+.button{
+display: flex;
+align-items: center;
+justify-content: center;
+width: 80%;
+height: 100px;
+font-family: "Roboto", serif;
+font-size: 26px;
+font-weight: 900;
+padding: 36px;
+border-radius: 100px 0px 0px 0px solid black;
+box-shadow: none;
+background-color: #c6c4c3;
+border-bottom: 4px solid black;
+border-radius: 14px;
+cursor: pointer;
+}
+
+
+.button:hover {
+background: linear-gradient(
+90deg,
+#33FF00,    /* Verde lima */
+#00FF66,    /* Verde agua */
+#00FFFF,    /* Cian */
+#0066FF,    /* Azul */
+#6600FF,    /* Violeta */
+#FF00FF,    /* Magenta */
+#FF0066,    /* Rosa */
+#FF3300     /* Naranja */
+);
+background-size: 200% 200%;
+animation: rainbow 3s ease infinite;
+}
+
+@keyframes rainbow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.container{
+width: 50%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+align-content: center;
+gap: 20px;
+
+}
+
+.options label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+/* Oculta el checkbox original */
+.check {
+    appearance: none;
+    width: 50px;
+    height: 25px;
+    background-color: #ccc;
+    border-radius: 15px;
+    position: relative;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Fondo del toggle cuando está activado */
+.check:checked {
+    background: linear-gradient(
+        90deg,
+        #33FF00,    /* Verde lima */
+        #00FF66,    /* Verde agua */
+        #00FFFF,    /* Cian */
+        #0066FF,    /* Azul */
+        #6600FF,    /* Violeta */
+        #FF00FF,    /* Magenta */
+        #FF0066,    /* Rosa */
+        #FF3300     /* Naranja */
+    );
+    background-size: 200% 200%;
+    animation: rainbow 3s ease infinite;
+}
+
+/* Punto deslizante del toggle */
+.check::before {
+content: "";
+position: absolute;
+width: 21px;
+height: 21px;
+background-color: white;
+border-radius: 50%;
+top: 2px;
+left: 2px;
+transition: transform 0.3s;
+}
+
+/* Mueve el punto deslizante a la derecha cuando está activado */
+.check:checked::before {
+    transform: translateX(25px);
+}
