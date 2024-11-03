@@ -102,14 +102,14 @@ cursor: pointer;
 .button:hover {
 background: linear-gradient(
 90deg,
-#33FF00,    /* Verde lima */
-#00FF66,    /* Verde agua */
-#00FFFF,    /* Cian */
-#0066FF,    /* Azul */
-#6600FF,    /* Violeta */
-#FF00FF,    /* Magenta */
-#FF0066,    /* Rosa */
-#FF3300     /* Naranja */
+#33FF00,   
+#00FF66,    
+#00FFFF,   
+#0066FF,    
+#6600FF,   
+#FF00FF,   
+#FF0066,   
+#FF3300    
 );
 background-size: 200% 200%;
 animation: rainbow 3s ease infinite;
@@ -147,7 +147,6 @@ gap: 20px;
     cursor: pointer;
 }
 
-/* Oculta el checkbox original */
 .check {
     appearance: none;
     width: 50px;
@@ -160,24 +159,22 @@ gap: 20px;
     transition: background-color 0.3s;
 }
 
-/* Fondo del toggle cuando está activado */
 .check:checked {
-    background: linear-gradient(
-        90deg,
-        #33FF00,    /* Verde lima */
-        #00FF66,    /* Verde agua */
-        #00FFFF,    /* Cian */
-        #0066FF,    /* Azul */
-        #6600FF,    /* Violeta */
-        #FF00FF,    /* Magenta */
-        #FF0066,    /* Rosa */
-        #FF3300     /* Naranja */
+background: linear-gradient(
+90deg,
+        #33FF00,    
+        #00FF66,    
+        #00FFFF,    
+        #0066FF,    
+        #6600FF,    
+        #FF00FF,    
+        #FF0066,    
+        #FF3300     
     );
     background-size: 200% 200%;
     animation: rainbow 3s ease infinite;
 }
 
-/* Punto deslizante del toggle */
 .check::before {
 content: "";
 position: absolute;
@@ -190,7 +187,6 @@ left: 2px;
 transition: transform 0.3s;
 }
 
-/* Mueve el punto deslizante a la derecha cuando está activado */
 .check:checked::before {
     transform: translateX(25px);
 }
